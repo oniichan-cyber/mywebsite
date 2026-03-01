@@ -118,7 +118,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 import os
 
