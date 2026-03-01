@@ -1,11 +1,116 @@
 {% extends 'portfolio/base.html' %}
+{% load static %}
 
-{% block title %}Home - Amafood{% endblock %}
+{% block title %}Amafood Product & Wine{% endblock %}
 
 {% block content %}
-<div class="container text-center mt-5">
-    <h1>Welcome to Amafood Product & Wine</h1>
-    <p class="lead">Premium local handmade products</p>
-    <a href="tel:+919615740072" class="btn btn-primary btn-lg">Order Now</a>
+
+<!-- Hero Section -->
+<div style="background: linear-gradient(rgba(10, 37, 64, 0.9), rgba(10, 37, 64, 0.9)), url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1920'); background-size: cover; background-position: center; padding: 100px 0; color: white; text-align: center;">
+    <div class="container">
+        <h1 style="font-size: 50px; font-weight: bold;">Amafood Product & Wine</h1>
+        <p style="font-size: 22px; margin: 20px 0;">
+            Premium quality local handmade products made from our own cultivated fruits<br>
+            with <strong>no chemicals added</strong>. 100% pure, 100% natural!
+        </p>
+        <a href="tel:+919615740072" style="background: #d4af37; color: #0a2540; padding: 15px 40px; font-size: 20px; font-weight: bold; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 20px;">📞 Order Now</a>
+    </div>
 </div>
+
+<!-- Wine Section -->
+<div class="container mt-5" id="wine">
+    <h2 style="color: #0a2540; font-size: 35px; font-weight: bold; margin-bottom: 30px;">🍷 Our Wines</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="{% static 'portfolio/images/wine1.jpg' %}" style="width: 100%; height: 250px; object-fit: cover;" alt="Wine">
+                <div style="padding: 20px;">
+                    <h5 style="color: #0a2540;">Premium Wine</h5>
+                    <p style="color: #666;">Handcrafted from locally grown fruits.</p>
+                    <a href="tel:+919615740072" style="background: #d4af37; color: #0a2540; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block;">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="{% static 'portfolio/images/wine2.jpg' %}" style="width: 100%; height: 250px; object-fit: cover;" alt="Wine">
+                <div style="padding: 20px;">
+                    <h5 style="color: #0a2540;">Special Wine</h5>
+                    <p style="color: #666;">Smooth and refreshing taste.</p>
+                    <a href="tel:+919615740072" style="background: #d4af37; color: #0a2540; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block;">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="{% static 'portfolio/images/wine3.jpg' %}" style="width: 100%; height: 250px; object-fit: cover;" alt="Wine">
+                <div style="padding: 20px;">
+                    <h5 style="color: #0a2540;">Fruit Wine</h5>
+                    <p style="color: #666;">Made from orchard fruits.</p>
+                    <a href="tel:+919615740072" style="background: #d4af37; color: #0a2540; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block;">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chips Section -->
+<div class="container mt-5" id="chips">
+    <h2 style="color: #0a2540; font-size: 35px; font-weight: bold; margin-bottom: 30px;">🥔 Chips</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="{% static 'portfolio/images/chips1.jpg' %}" style="width: 100%; height: 250px; object-fit: cover;" alt="Chips">
+                <div style="padding: 20px;">
+                    <h5 style="color: #0a2540;">Crispy Chips</h5>
+                    <p style="color: #666;">Tasty homemade chips.</p>
+                    <a href="tel:+919615740072" style="background: #d4af37; color: #0a2540; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block;">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="{% static 'portfolio/images/chips2.jpg' %}" style="width: 100%; height: 250px; object-fit: cover;" alt="Chips">
+                <div style="padding: 20px;">
+                    <h5 style="color: #0a2540;">Special Chips</h5>
+                    <p style="color: #666;">Crunchy and delicious.</p>
+                    <a href="tel:+919615740072" style="background: #d4af37; color: #0a2540; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block;">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="{% static 'portfolio/images/chips3.jpg' %}" style="width: 100%; height: 250px; object-fit: cover;" alt="Chips">
+                <div style="padding: 20px;">
+                    <h5 style="color: #0a2540;">Family Pack</h5>
+                    <p style="color: #666;">Perfect for family.</p>
+                    <a href="tel:+919615740072" style="background: #d4af37; color: #0a2540; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block;">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div style="background: #0a2540; color: white; padding: 50px 0; margin-top: 50px;" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 style="color: #d4af37;">Contact Us</h2>
+                <p style="font-size: 18px;">
+                    <strong>Producer:</strong> Baldilla T. Sangma<br>
+                    <strong>Phone:</strong> +91 9615740071<br>
+                    <strong>Email:</strong> baldilatsangma@gmail.com<br>
+                    <strong>Address:</strong> Jenggitchakgre, West Garo Hills<br>
+                    Meghalaya - 794005
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <h3 style="color: #d4af37;">Order Now!</h3>
+                <a href="tel:+919615740072" style="background: #d4af37; color: #0a2540; padding: 20px 50px; font-size: 24px; font-weight: bold; border-radius: 10px; text-decoration: none; display: inline-block; margin-top: 20px;">📞 Call +91 9615740072</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
